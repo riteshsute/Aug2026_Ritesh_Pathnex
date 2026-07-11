@@ -1,0 +1,3 @@
+Linux video 2 hours 
+Practice linux cammands using ubuntu terinal 
+setup github and commited first file
