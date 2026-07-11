@@ -1,0 +1,11 @@
+linux cammands
+
+mkdir
+vim
+vi
+cat
+ls
+ls -la
+mv
+rm
+..........
