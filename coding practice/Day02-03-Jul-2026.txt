@@ -1,0 +1,11 @@
+practiced commands on terminal 
+top
+sudo
+netstat
+chmod
+chown
+journalctl
+kill
+tail
+systemctl
+...........
