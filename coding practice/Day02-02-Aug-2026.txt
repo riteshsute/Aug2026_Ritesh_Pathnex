@@ -1,0 +1,8 @@
+Linux Commands what i use today 
+mkdir
+cd
+vim
+pwd
+rm
+mv
+
