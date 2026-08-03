@@ -1,0 +1,5 @@
+Morning Class 2:30 hours
+Practiced Linux Commands 1:30 hours
+watched the morning session and last month's linux video 2 hours for both on 1.5x speed 
+created and connected to ec2 and explored the ec2 linux terminal with linux commands 1 hour
+prepared for the evening session learned about mounted storage, Load Average, and osi layers 1 hour  
