@@ -1,0 +1,4 @@
+learned about linux commands in morning session approx 3:30 hours,
+Practiced commands on linux Terminal,
+created hard and soft links 
+launch and connect ec2 instance 
