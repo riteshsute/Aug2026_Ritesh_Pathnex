@@ -1,0 +1,6 @@
+Morning session 3 hours 
+Repeated and practiced command along 3 hours 
+tried the other commands from pdf like ps kill pkill and pgrep 30 min
+prepared for the evening session 15 min
+written the ansible and docker play in ansible playbook(yaml file) 1:30 hours
+will watch terraform/ansible class from 8:30 to 9:30
