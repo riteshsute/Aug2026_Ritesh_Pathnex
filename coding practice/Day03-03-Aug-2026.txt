@@ -1,0 +1,9 @@
+Practised Linux commands 
+top
+find
+-type
+du
+df
+-h
+ll -li
+ln
