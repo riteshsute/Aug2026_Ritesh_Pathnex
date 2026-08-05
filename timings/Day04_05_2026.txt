@@ -1,0 +1,20 @@
+Today 05-08-2026
+
+morning session - 3:30 hours 
+practices linux command from the session 1 hour 
+watched scripting class, used commands to build bash scripts 1:30 hour
+completed the task 2 from github lab 1 hour to write and understand others aspects 
+tried network commands, understand the linux run levels and networking commands 1 hour
+Goes through the linux interview question and topics 1 hour 
+Tommorrows 
+
+ will do the practice for 1 hour in night 
+
+
+Tommorrow's tasks
+# Attend the Morning Session 
+# Attend the Evening Session
+# Practice and Understand concepts of morning class
+# write the Lab code and push it to the github 
+# Revise the git commands and topics from the notes 
+# watch last month's class to understand better
