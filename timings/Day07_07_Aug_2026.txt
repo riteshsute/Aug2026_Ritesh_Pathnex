@@ -1,0 +1,20 @@
+07-Aug-2026
+
+Today's Tasks
+
+# Attended the Morning Session - 3 hours
+# Attended the Evening Session - 1 hour 
+# Learned about the concepts of aws - EC2/VPC/S3 and other (subnet, ASGs, Gateways) - 2 hour
+# written the Lab code and push it to the github with understanding - 30 min
+# checkout the notes to get better ideas of concepts by diving into it - 1 hour 
+
+
+Tommorrow's Tasks
+
+# Attend the Morning Session 
+# Attend the Evening Session
+# Practice the last and today's Aws concepts
+# write the Lab code and push it to the github with understanding
+# Record Introduction Video 
+# practice linux command for 30 min - 1 hour 
+# will add on the go 
