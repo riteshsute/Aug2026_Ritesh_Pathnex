@@ -1,0 +1,22 @@
+Today's Tasks
+
+# Attend the Morning Session - 3:30 hours
+# Attend the Evening Session - 30 Min
+# Practice and Understand concepts of morning class - 1 hour
+# write the Lab code and push it to the github - 30 min
+# Revise the git commands and topics from the notes - 1 hour
+# watch last month's class to understand better  - 1 hour
+# Go through the notes of interview questions of linux and git - 1 hour
+# Watching Aws classes to get overview - 1 - 2 hour
+
+
+
+
+Tommorrow's Tasks
+# Attend the Morning Session 
+# Attend the Evening Session
+# Revised the linux and git in short time 
+# Practice the Learnings of morning session 
+# write the Lab code and push it to the github with understanding 
+# checkout the notes to get better ideas of concepts by diving into it 
+
