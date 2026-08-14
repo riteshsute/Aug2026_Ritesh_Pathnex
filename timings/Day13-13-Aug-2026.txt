@@ -1,0 +1,22 @@
+13Aug-2026
+
+Today's Tasks
+
+# Attended the Morning Session - 2:30 hour
+# Attended the Evening Session - 30 min -
+# Practiced and worked on kubernetes cluster - 3 hour
+# written the Lab code and push it to the github - 30 min
+# Revised the Kubernetes Concepts from morning session - 2 hour
+# Record Introduction video - 15 min
+# Watched today's and yesterday's K8s Classes - 2:30 hour
+
+
+Tommorrow's Tasks
+
+# Attend the Morning Session
+# Prepare and attend the Evening Session
+# Practice the Kubernetes concepts
+# write the Lab code and push it to the github with understanding
+# Record Introduction Video
+# revised the docker and aws concepts - just overview
+# Practice docker - practical
