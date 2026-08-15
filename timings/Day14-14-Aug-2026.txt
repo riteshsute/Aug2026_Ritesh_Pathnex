@@ -1,0 +1,22 @@
+14Aug-2026
+
+Today's Tasks
+
+# Attended the Morning Session - 3:30 hour
+# Attended the Evening Session - 30 min -
+# Configured Kubernetes Cluster from cli and practice concepts explained in session - 3 hour
+# written the Lab code and push it to the github - 30 min
+# Revised the Kubernetes Concepts from morning session - 2 hour
+# Record Introduction video - 30 min
+# watched morning once more to understand better - 1:30 hour
+# overviewed the aws, linux concepts from the pdf to be in sync and created Docker container from the git hub code - 1 hour 
+
+Tommorrow's Tasks
+
+# Attend the Morning Session
+# Prepare and attend the Evening Session
+# Practice the Kubernetes concepts
+# write the Lab code and push it to github by understanding it
+# Record Introduction Video
+# Practice docker - practical
+# Revised all concepts of kubernetes and docker concepts form the last classeis
