@@ -1,0 +1,16 @@
+15Aug-2026
+
+Today's Tasks
+
+# Revised the Kubernetes Concepts - 2 hour
+# Record Introduction video - 30 min
+
+
+Tommorrow's Tasks
+
+# Attend the Morning Session
+# Prepare and attend the Evening Session
+# Practice the Kubernetes Helm concepts
+# write the Lab code and push it to github by understanding it
+# Record Introduction Video
+# Revised all concepts of Kubernetes concepts form the last classes
