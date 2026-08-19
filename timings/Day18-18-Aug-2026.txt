@@ -1,0 +1,18 @@
+15Aug-2026
+
+Today's Tasks
+
+# Attended the Morning Session - 2:30 hour
+# Attended the Evening Session - 45 min 
+# Practice Helm Chart with Kubernetes - 2 hour
+# written the Lab code and push it to the github - 30 min
+# Record Introduction video - 15 min
+
+Tommorrow's Tasks
+
+# Attend the Morning Session
+# Prepare and attend the Evening Session
+# Practice the Kubernetes with Helm
+# write the Lab code and push it to github
+# Record Introduction Video
+# Revised all concepts of Kubernetes concepts form the last classes

@@ -1,0 +1,19 @@
+19Aug-2026
+
+Today's Tasks
+
+# Attended the Morning Session - 3:30 hour
+# Attended the Evening Session - 30 min 
+# Practiced k8s with argoCD - 2 hour
+# written the Lab code and push it to the github - 30 min
+# Revised the Kubernetes from morning session - 1 hour
+# Record Introduction video - 30 min 
+
+Tommorrow's Tasks
+
+# Attend the Morning Session
+# Prepare and attend the Evening Session
+# Practice the terraform
+# write the Lab code and push it to github by understanding it
+# Record Introduction Video
+# Revised all concepts of Kubernetes concepts form the last classes
