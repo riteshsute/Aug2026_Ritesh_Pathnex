@@ -1,0 +1,17 @@
+24Aug-2026
+
+Today's Tasks
+
+# Attended the Evening Session - 30 min 
+# watched the Ansible and cicd classes that i missed - 5 hours
+# written the Lab code and push it to the github - 30 min
+# Record Introduction video - 30 min 
+
+Tommorrow's Tasks
+
+# Attend the Morning Session
+# Prepare and attend the Evening Session
+# write the Lab code and push it to github by understanding it
+# Record Introduction Video
+# Pratice the monitoring class concepts
+# clear the concepts from ansible and cicd 
