@@ -1,0 +1,13 @@
+23Aug-2026
+
+Today's Tasks
+# Studied the CICD concepts from pdf - 1 hour 
+# Record Introduction video - 30 min 
+
+Tommorrow's Tasks
+
+# Prepare and attend the Evening Session
+# Practice the CICD and ansible
+# write the Lab code and push it to github by understanding it
+# Record Introduction Video
+# watch the missed classes ansible and cicd
