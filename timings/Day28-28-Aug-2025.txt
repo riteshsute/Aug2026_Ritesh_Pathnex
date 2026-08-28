@@ -1,0 +1,18 @@
+28Aug-2026
+
+Today's Tasks
+
+# Attended the Morning Session - 2 hours
+# Attended the Evening Session - 30 min
+# Practiced kubernetes-SSL/TLS - 3 hour
+# written the Lab code and push it to the github - 30 min
+# Record Introduction video - 30 min 
+
+Tommorrow's Tasks
+
+# Attend the Morning Session
+# Prepare and attend the Evening Session
+# Practice the concepts from morning sessions
+# write the Lab code and push it to github by understanding it
+# Record Introduction Video
+# Revised concepts of kubernetes 
