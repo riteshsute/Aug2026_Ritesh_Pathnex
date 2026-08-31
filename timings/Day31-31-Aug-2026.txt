@@ -1,0 +1,16 @@
+31Aug-2026
+
+Today's Tasks
+
+# Attended the Evening Session - 1 hour
+# revised the aws concepts - 2 hour
+# written the Lab code and push it to the github - 30 min
+# Record Introduction video - 30 min  
+
+Tommorrow's Tasks
+
+# Prepare and attend the Evening Session
+# Practice the concepts from starting
+# write the Lab code and push it to github by understanding it
+# Record Introduction Video
+# watch the cicd class 
