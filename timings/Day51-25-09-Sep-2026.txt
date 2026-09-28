@@ -1,0 +1,12 @@
+25Sep-2026
+
+Today's Tasks
+
+
+Tommorrow's Tasks
+
+# Prepare and attend the Evening Session
+# Practice the concepts from the Feedback
+# write the Lab code and push it to github by understanding it
+# Record Introduction Video
+# clear the architecture knowledge for the ansible/cicd - if time allows (kubernetes, helm, argocd )
