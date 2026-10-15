@@ -1,0 +1,12 @@
+16-oct-2026
+
+Tommorrow's Tasks
+
+# Do the Hands on for kubernetes with helm and argocd (WIth Troubleshooting)
+# Do the Q&A from kubernetes with helm and argocd (Interview specific)
+# write the Lab code and push it to github by understanding it
+# Record Introduction Video
+# revised the pdf just overview
+# If time remains go for the aws, linux, and docker interview specific concepts and Q&A
+
+
