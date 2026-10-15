@@ -8,5 +8,6 @@ Tommorrow's Tasks
 # Record Introduction Video
 # revised the pdf just overview
 # If time remains go for the aws, linux, and docker interview specific concepts and Q&A
+# Do the first chatgpt set 
 
 
