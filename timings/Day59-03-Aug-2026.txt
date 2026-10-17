@@ -1,0 +1,18 @@
+17-oct-2026
+
+Completed Tasks
+
+# written the Lab code and pushed   -  15 min
+# Did the Q&A from kubernetes with helm and argocd (Chatgpt set fir1st) -  3 hour
+# revised the pdf just overview - 1:30 hour
+# Attend the class on ai agents - 1:30 hour
+# Watched the 2 kubernetes classes to revise - 3 hour
+
+Tommorrow's Tasks
+
+# Do the terraform and ansible hands on 
+# Do the Q&A from kubernetes with helm and argocd (Chatgpt set 2)
+# Record Introduction Video
+# write the Lab code and push it to github by understanding it
+# revised the pdf just overview
+# If time remains go for the aws, linux, and docker interview specific concepts and Q&A
