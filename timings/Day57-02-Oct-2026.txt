@@ -1,0 +1,14 @@
+16-oct-2026
+
+Completed Tasks
+
+# Do the Hands on for kubernetes with helm and argocd (WIth Troubleshooting) - 8+ hours 
+# written the Lab code and pushed
+
+Tommorrow's Tasks
+
+# Do the Q&A from kubernetes with helm and argocd (Chatgpt set first)
+# Record Introduction Video
+# write the Lab code and push it to github by understanding it
+# revised the pdf just overview
+# If time remains go for the aws, linux, and docker interview specific concepts and Q&A
