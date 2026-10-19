@@ -1,0 +1,17 @@
+19-oct-2026
+
+Completed Tasks
+
+# Watch the K8s class - 2:30 hour 
+# written the Lab code and pushed   -  15 min
+# Did the Q&A from chatgpt set 3 -  3 hour
+
+Tommorrow's Tasks
+
+# Do the Chatgpt set 3
+# Do the Q&A from kubernetes with helm and argocd
+# Record Introduction Video
+# write the Lab code and push it to github by understanding it
+# revised the pdf just overview
+# If time remains go for the aws, linux, and docker interview specific concepts and Q&A
+ 
