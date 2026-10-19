@@ -1,0 +1,17 @@
+18-oct-2026
+
+Completed Tasks
+
+# written the Lab code and pushed   -  15 min
+# Did the Q&A from chatgpt set 3 -  3 hour
+# Record Introduction Video = 5 min
+
+Tommorrow's Tasks
+
+# Do the terraform and ansible hands on 
+# Do the Chatgpt set 3
+# Do the Q&A from kubernetes with helm and argocd
+# Record Introduction Video
+# write the Lab code and push it to github by understanding it
+# revised the pdf just overview
+# If time remains go for the aws, linux, and docker interview specific concepts and Q&A
