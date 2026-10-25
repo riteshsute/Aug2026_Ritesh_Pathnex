@@ -1,0 +1,188 @@
+# Day 29 — Real-World Mini Project
+
+Complete the following:
+
+# Terraform
+- Create EC2 (choose: c5.xlarge / r5.2xlarge / r6i.4xlarge / c6i.8xlarge / c6a.12xlarge)
+- Security group
+- Key pair
+- EBS volume
+- Output IP
+
+
+resource "aws_key_pair" "pathnex" {
+  key_name  = "pathnex-key"
+  public_key = file(var.public_key_path)
+}
+
+resource "aws_security_group" "PathnexSg" {
+  name     = "Pathne-Sg"
+  vpc_id   = var.vpc_id
+
+  ingress {
+    from_port   = 22
+    to_port   = 22
+    protocol  = "tcp"
+    cidr_blocks  = ["0.0.0.0/0"]
+  }
+
+  egress {
+    from_port   = 0
+    to_port   = 0
+    protocol  = "-1"
+    cidr_blocks  = ["0.0.0.0/0"]
+  }
+}
+
+
+resource "aws_instance" "PathnexEC2" {
+  ami                         = var.ami_id
+  instance_type               = "c6a.12xlarge"
+  subnet_id                   = var.subnet_id
+  vpc_security_group_ids      = [aws_security_group.PathnexSg.id]
+  key_name                    = aws_key_pair.pathnex.key_name
+  associate_public_ip_address = true
+
+  tags = {
+    Name = "Pathnex-Instance"
+  }
+}
+
+resource "aws_ebs_volume " "PathnexVolume" {
+  availability_zone = var.availability_zone
+  size              = 20
+  type              = "gp3"
+
+  tags = {
+    Name = "Pathnex-Volume"
+  }
+}
+
+resource "aws_volume_attachment" "pathnex" {
+  device_name = "/dev/sdf"
+  volume_id   = aws_ebs_volume.pathnex.id
+  instance_id = aws_instance.pathnex.id
+}
+
+output "instance_public_ip" {
+  value = aws_instance.pathnex.public_ip
+}
+
+# Ansible
+- Install nginx
+- Deploy "Welcome to Pathnex" HTML page
+- Start & enable service
+
+- Name:  install and enable nginx
+  hosts: all
+  become: true
+
+  tasks:
+    - name: Install nginx
+      ansible.builtin.package
+        name: nginx
+        state: present
+
+
+    - name: Deploy welcome page
+      ansible.builtin.copy:
+        content: "Welcome to Pathnex\n"
+        dest: /usr/share/nginx/html/index.html
+        owner: root
+        group: root
+        mode: "0644"
+    
+    - name: start & Enable nginx
+      ansible.builtin.service:
+        name: nginx
+        state: started
+        enabled: true
+
+# Kubernetes
+- Create Deployment with PVC
+- Expose via NodePort
+
+apiversion: apps/v1
+kind: Deployment
+metadata:
+  name: Pods
+spec:
+  replicas: 2
+  selector:
+    matchlabels:
+      apps: rep-pods
+  template:
+    metadata:
+      label:
+        apps: rep-pods
+    spec:
+      containers:
+        - name: nginx
+          image: nginx
+          ports:
+            - containerPort: 80
+          volumemount:
+            - name: pvc-volume
+              path:   /etc/munt
+
+      volume:
+        name: pvc-volume
+        persistentVolumeClaim:
+            claimName: nginx-pvc
+
+
+------
+apiversion: v1
+kind: persistentvolumeClaim
+metadata:
+  name: nginx-pvc
+spec:
+  accessmodes:
+    - readwriteonce:
+  resources:
+    requests:
+      storage: 1Gi
+
+----
+
+apiversion: apps/v1
+kind: service
+metadata:
+  name: networks
+specs:
+  type: NodePort
+  selector:
+    app: rep-pods
+  ports:
+    - port: 80
+      targetport: 80
+      Nodeport: 30080
+
+
+# Shell Script
+- Print 5 system checks:
+  - CPU
+  - Memory
+  - Disk
+  - IP
+  - Top process
+
+
+#!/bin/bash
+
+echo "CPU:"
+lscpu
+
+echo "Memory:"
+free -h
+
+echo "Disk:"
+df -h /
+
+echo "IP:"
+hostname -I
+
+echo "Top process by CPU:"
+ps --sort=-%cpu | head -n 6
+
+
