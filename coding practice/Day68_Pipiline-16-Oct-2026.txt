@@ -1,0 +1,85 @@
+## 5️⃣ Jenkins Pipeline
+You will learn to **combine all tasks into a realistic Jenkins Pipeline** with proper stages and tags.
+
+- Create **Declarative Pipeline** with stages:
+- Infrastructure – apply Terraform to create EC2, Security Group, Key Pair, and EBS volume
+- App Deployment – run Ansible playbooks and deploy Kubernetes resources
+- Monitoring Checks – execute shell scripts to check:
+- CPU
+- Memory
+- Disk
+- IP
+- Top process
+
+- Use environment variables for all stages:
+- INSTITUTE_NAME = "Pathnex"
+- TEAM = "DevOps"
+- ENV = "prod"
+- PROJECT = "Pathnex-Training"
+
+
+pipeline {
+    agent any
+
+    environment {
+        INSTITUTE_NAME = 'Pathnex'
+        TEAM = 'DevOps'
+        ENV = 'prod'
+        PROJECT = 'Pathnex-Training'
+        TF_IN_AUTOMATION = 'true'
+        ANSIBLE_HOST_KEY_CHECKING = 'False'
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Infrastructure') {
+            steps {
+                dir('terraform') {
+                    sh '''
+                        terraform init
+                        terraform validate
+                        terraform apply -auto-approve
+                    '''
+                }
+            }
+        }
+
+        stage('App Deployment') {
+            steps {
+                sh '''
+                    ansible-playbook -i ansible/inventory.ini ansible/playbook.yml
+                    kubectl apply -f kubernetes/
+                '''
+            }
+        }
+
+        stage('Monitoring Checks') {
+            steps {
+                sh '''
+                    set -eu
+
+                    echo "CPU:"
+                    uptime
+
+                    echo "Memory:"
+                    free -h
+
+                    echo "Disk:"
+                    df -h /
+
+                    echo "IP:"
+                    hostname -I
+
+                    echo "Top process by CPU:"
+                    ps --sort=-%cpu | head -n 6
+                '''
+            }
+        }
+    }
+}
+
