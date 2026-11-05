@@ -1,0 +1,59 @@
+
+
+``` yaml
+
+stages:
+  - terraform_plan
+  - terraform_apply
+  - app_deployment
+  - monitoring_checks
+
+variables:
+  INSTITUTE_NAME: "Pathnex"
+  TEAM: "DevOps"
+  ENV: "prod"
+  PROJECT: "Pathnex-Training"
+  TF_IN_AUTOMATION: "true"
+  TF_INPUT: "false"
+
+terraform_plan:
+  stage: terraform_plan
+  script:
+    - cd terraform
+    - terraform init
+    - terraform validate
+    - terraform plan -out=tfplan -var="project=${PROJECT}"
+  artifacts:
+    paths:
+      - terraform/tfplan
+    expire_in: 1 hour
+
+terraform_apply:
+  stage: terraform_apply
+  needs:
+    - job: terraform_plan
+      artifacts: true
+  script:
+    - cd terraform
+    - terraform init
+    - terraform apply -input=false -auto-approve tfplan
+  when: manual
+  allow_failure: false
+
+app_deployment:
+  stage: app_deployment
+  script:
+    - ansible-playbook -i ansible/inventory.ini ansible/playbook.yml
+    - kubectl apply -f /kubernetes
+
+monitoring_checks:
+  stage: monitoring_checks
+  script:
+    - echo "ip"
+    - ip addr
+    - echo "Disk:"
+    - df -h /
+    - echo "Memory:"
+    - free -h 
+
+```
