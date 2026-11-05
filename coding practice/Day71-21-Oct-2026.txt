@@ -1,0 +1,79 @@
+# Jenkins and GitLab CI Pipelines
+
+## Jenkins Pipeline
+
+Save this as `Jenkinsfile` at the repository root. Update the paths if the
+Terraform, Ansible, or Kubernetes files are stored elsewhere.
+
+
+pipeline {
+    agent any
+
+    environment {
+        INSTITUTE_NAME = 'Pathnex'
+        TEAM = 'DevOps'
+        ENV = 'prod'
+        PROJECT = 'Pathnex-Training'
+        TF_IN_AUTOMATION = 'true'
+        TF_INPUT = 'false'
+    }
+    stages{
+        stage('Checkout') {
+            steps{
+                checkout scm
+            }
+        }
+        stage('Terraform Plan') {
+            steps {
+                dir('terraform'){
+                    sh '''
+                      set -eu
+                      terraform init
+                      terraform validate
+                      terraform plan -out=tfplan -var="project=${PROJECT}"
+                    '''
+                }
+            }
+        }
+        stage('Production Approval') {
+            when {
+                    expression {env.ENV == 'prod'}
+                }
+            steps {
+                input message: 'Approve applying the Terraform plan and deploying to production?'
+            }
+        }
+        stage ('Terraform Apply') {
+            steps {
+                dir('terraform') {
+                    sh 'terraform apply -input=false -auto-approve tfplan'
+                }
+            }
+        }
+        stage('App Deployment') {
+            steps {
+                sh '''
+                 set -eu
+                 ansible-playbook -i ansible/inventory.yml ansible/playbook.yml
+                 kubectl apply -f kubernetes/
+                '''
+            }
+        }
+        stage('Monitoring Checks') {
+            steps {
+                sh ''' 
+                   set -eu
+                   echo "IP:"
+                   ip addr
+
+                   echo "Disk:"
+                   df -h
+
+                   echo "Memory:"
+                   free -h
+                '''
+            }
+        }
+    }
+}
+
