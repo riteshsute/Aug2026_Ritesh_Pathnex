@@ -1,0 +1,19 @@
+16-Nov-2026
+
+Completed Tasks
+
+# written the Lab code and pushed -  20 min
+# Practice the Practical combining Terraform, Docker, Ecr, Helm, argocd and jenkins - 5 hours
+# Evening Session - 3 hour 
+
+Tommorrow's Tasks
+
+# Practice the Python and bash scripting 
+# Do the Chatgpt all revision 
+# Record Introduction Video
+# write the Lab code and push it to github by understanding it 
+
+
+
+
+ 
