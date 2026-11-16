@@ -1,0 +1,21 @@
+14-Nov-2026
+
+Completed Tasks
+
+# written the Lab code and pushed -  20 min
+# Revised the Q&A from chatgpt sets - 2 hours
+# Revised the Pdf of Azure and AIOps - 1 hour 
+# Record Introduction Video  - 5 min
+
+Tommorrow's Tasks
+
+# Practice the Python and bash scripting 
+# Practice the CICD pipeline
+# Do the Chatgpt all revision 
+# Record Introduction Video
+# write the Lab code and push it to github by understanding it 
+
+
+
+
+ 
