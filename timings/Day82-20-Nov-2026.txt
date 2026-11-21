@@ -1,0 +1,23 @@
+20-Nov-2026
+
+Completed Tasks
+
+# written the Lab code and pushed -  20 min
+# Practice the Practical combining Terraform, Docker, Ecr, Helm, argocd and jenkins - 5 hours
+# Evening Session - 2 hour 
+# Record Introduction Video
+# Studied about the AI related stuff - 1 hour
+
+Tommorrow's Tasks
+
+# watch the Ai related classes  - priority
+# Study the L1 Pdf and brush all the concepts(K8s, Linux, Terraform, Cloud) - priority
+# Do the Chatgpt all revision - priority
+# Practice the Python and bash scripting - 2nd priority
+# Record Introduction Video
+# write the Lab code and push it to github by understanding it 
+
+
+
+
+ 
